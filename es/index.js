@@ -40,7 +40,7 @@ exports.default = _postcss2.default.plugin('postcss-atrule-bem', function (opts)
   var ELEMENT = OPTIONS.shortcuts ? 'e' : 'element';
   var MODIFIER = OPTIONS.shortcuts ? 'm' : 'modifier';
   var VALID_RULES = [BLOCK, ELEMENT, MODIFIER];
-  var VALID_CHILDREN = (_VALID_CHILDREN = {}, _defineProperty(_VALID_CHILDREN, BLOCK, [ELEMENT, MODIFIER]), _defineProperty(_VALID_CHILDREN, ELEMENT, [MODIFIER]), _defineProperty(_VALID_CHILDREN, MODIFIER, [ELEMENT]), _VALID_CHILDREN);
+  var VALID_CHILDREN = (_VALID_CHILDREN = {}, _defineProperty(_VALID_CHILDREN, BLOCK, [ELEMENT, MODIFIER]), _defineProperty(_VALID_CHILDREN, ELEMENT, [MODIFIER]), _defineProperty(_VALID_CHILDREN, MODIFIER, [ELEMENT, MODIFIER]), _VALID_CHILDREN);
 
   function recursiveWalker(container, previousSelector, parent, options, result, BLOCK_SELECTOR) {
     return function (node) {
